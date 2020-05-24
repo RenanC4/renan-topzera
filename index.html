@@ -21,7 +21,9 @@ window.addEventListener('keyup', (e) => {
   pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
   if (pressed.join('').includes(secretCode)) {
     console.log('DING DING!');
-    cornify_add();
+    for(i=0; i<100; i++){ 
+      cornify_add();
+    }
   }
   console.log(pressed);
 });
